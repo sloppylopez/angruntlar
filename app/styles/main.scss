@@ -1,0 +1,258 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$font-stack: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+.container {
+  h1 {
+    font: 900 70px/1 'Source Sans Pro', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    letter-spacing: -10px;
+
+    text-shadow: 0 1px 0 hsl(174, 5%, 80%),
+    0 2px 0 hsl(174, 5%, 75%),
+    0 3px 0 hsl(174, 5%, 70%),
+    0 4px 0 hsl(174, 5%, 66%),
+    0 5px 0 hsl(174, 5%, 64%),
+    0 6px 0 hsl(174, 5%, 62%),
+    0 7px 0 hsl(174, 5%, 61%),
+    0 8px 0 hsl(174, 5%, 60%),
+    0 0 5px rgba(0, 0, 0, .05),
+    0 1px 3px rgba(0, 0, 0, .2),
+    0 3px 5px rgba(0, 0, 0, .2),
+    0 5px 10px rgba(0, 0, 0, .2),
+    0 10px 10px rgba(0, 0, 0, .2),
+    0 20px 20px rgba(0, 0, 0, .3);
+  }
+  h2 {
+    font-family: $font-stack;
+    font-weight: 800;
+  }
+  footer p {
+    font-size: 28px;
+  }
+}
+
+.red {
+  color: red;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background: #becccc;
+  border-bottom: 1px solid #e5e5e5;
+  .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+  }
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+  p + h4 {
+    margin-top: 28px;
+  }
+}
+
+//CSS SPINNER
+$w: 96px;
+$h: 112px;
+$xspace: $w/2;
+$yspace: $h/4 - 1;
+$speed: 1.5s;
+
+.tetrominos {
+  position: relative;
+  left: 0;
+  top: 0;
+  transform: none;
+  height: 165px;
+  width: 240px;
+  margin: 0px auto;
+}
+
+.tetromino {
+  width: $w;
+  height: $h;
+  position: absolute;
+  transition: all ease .3s;
+  background: url('data:image/svg+xml;utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 684"%3E%3Cpath fill="%23010101" d="M305.7 0L0 170.9v342.3L305.7 684 612 513.2V170.9L305.7 0z"/%3E%3Cpath fill="%23fff" d="M305.7 80.1l-233.6 131 233.6 131 234.2-131-234.2-131"/%3E%3C/svg%3E') no-repeat top center;
+}
+
+.box1 {
+  animation: tetromino1 $speed ease-out infinite;
+}
+
+.box2 {
+  animation: tetromino2 $speed ease-out infinite;
+}
+
+.box3 {
+  animation: tetromino3 $speed ease-out infinite;
+  z-index: 2;
+}
+
+.box4 {
+  animation: tetromino4 $speed ease-out infinite;
+}
+
+@keyframes tetromino1 {
+  0%, 40% {
+    /* compose logo *//* 1 on 3 *//* L-shape */
+    transform: translate(0, 0);
+  }
+  50% {
+    /* pre-box */
+    transform: translate($xspace, -$yspace);
+  }
+  60%, 100% {
+    /* box *//* compose logo */
+    transform: translate($xspace*2, 0);
+  }
+}
+
+@keyframes tetromino2 {
+  0%, 20% {
+    /* compose logo *//* 1 on 3 */
+    transform: translate($xspace*2, 0px);
+  }
+  40%, 100% {
+    /* L-shape *//* box *//* compose logo */
+    transform: translate($xspace*3, $yspace);
+  }
+}
+
+@keyframes tetromino3 {
+  0% {
+    /* compose logo */
+    transform: translate($xspace*3, $yspace);
+  }
+  20%, 60% {
+    /* 1 on 3 *//* L-shape *//* box */
+    transform: translate($xspace*2, $yspace*2);
+  }
+  90%, 100% {
+    /* compose logo */
+    transform: translate($xspace, $yspace);
+  }
+}
+
+@keyframes tetromino4 {
+  0%, 60% {
+    /* compose logo *//* 1 on 3 *//* L-shape *//* box */
+    transform: translate($xspace, $yspace);
+  }
+  90%, 100% {
+    /* compose logo */
+    transform: translate(0, 0);
+  }
+}
+
+/* Fixing scraped rss TODO refactor*/
+.small-font {
+  font-size: 19px;
+}
+
+.fixrss {
+  margin-bottom: 43px;
+}
+
+.fixrss img {
+  margin-right: 7px;
+}
+
+.navcontainer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+//images ul
+.navcontainer ul li {
+  display: inline;
+}
+
+//Registration Form validation messages/
+.errors {
+  font-size: smaller;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color: red;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+
+}

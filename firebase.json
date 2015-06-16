@@ -1,0 +1,41 @@
+{
+  "firebase": "sloppylopez",
+  "public": "./dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**",
+    "coverage",
+    ".tmp"
+  ],
+  "rules": "config/firebase-rules.json",
+  "headers": [
+    {
+      "source": "**/*.@(eot|otf|ttf|ttc|woff|font.css)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "100000"
+        }
+      ]
+    },
+    {
+      "source": "**/*.@(jpg|jpeg|gif|png)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=100000"
+        }
+      ]
+    },
+    {
+      "source": "404.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=100000"
+        }
+      ]
+    }
+  ]
+}
