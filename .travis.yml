@@ -1,16 +1,15 @@
 language: node_js
 node_js:
 - 0.12
-sudo: required
+#sudo: required
 branches:
   except:
   - /-job-\d+/
   only:
   - master
 before_install:
-- sudo apt-get install -y -qq graphicsmagick
+- apt-get install -y -qq graphicsmagick
 - npm install -g codeclimate-test-reporter grunt-cli bower firebase-tools karma-cli
-- cd angularclient
 - npm install
 - bower install
 install: npm test
