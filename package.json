@@ -65,10 +65,6 @@
       "firebase deploy"
     ]
   },
-  "pre-commit": [
-    "jshint",
-    "test"
-  ],
   "engines": {
     "node": ">=0.12.0"
   }
