@@ -1,3 +1,53 @@
+## Angular + Firebase + Nodejs + ELK + Docker + Docker-Compose + RSS + Travis
+[![Code Climate](https://codeclimate.com/github/sloppylopez/angularclient/badges/gpa.svg)](https://codeclimate.com/github/sloppylopez/angularclient)
+[![Travis](https://travis-ci.org/sloppylopez/angularclient.svg)](https://travis-ci.org/sloppylopez/angularclient)
+[![Test Coverage](https://codeclimate.com/github/sloppylopez/angularclient/badges/coverage.svg)](https://codeclimate.com/github/sloppylopez/angularclient/coverage)
+<a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png"></a><a href="https://github.com/sloppylopez/angularclient/releases/tag/v1.0.0-feel-like-a-sir">  v1.0.0-feel-like-a-sir</a> 
+
+<img src="https://github.com/sloppylopez/angularclient/blob/master/angularclient/app/images/100x100/feellikeasir.jpg" alt="sloppylopez.com"/>
+
+<a href="http://sloppylopez.com/">sloppylopez.com</a>
+
+##FEATURES SO FAR:
+1) CI and CD with Travis, Code climate and Firebase, plus code climate it's integrated with github issues
+   so you can create a github issue when quality of code decreased after a PR in 1 click
+   
+2) 100% Unit Test coverage.
+
+3) Scaffolding of angular client done with Yeoman (default angular generator), moreover if you want to
+   create a new controller, only doing 'yo angular:controller name' Yeoman will create the controller
+   and the test spec for you!, this is a nice time saver in develop time.
+
+4) User management, including email verification fully integrated using angularfire
+
+5) Plain default mild installation of all components, bower, npm, docker which
+  means the whole project is mainstreamed at maximum, no hacky stuff, no wheel
+  reinventions (at least that I am aware of)
+  
+6) Run in almost all devices and browsers(IE8+ and all the rest) and it's responsive
+
+7) Completely logicless form validation using new angular 1.3 directive ng-messages
+
+8) grunt-responsive-images: this is yet another nice boiler plate removal out-of-the-box
+      just put any image in the folder 'images' under a folder specifying the width
+      and heigh '38x38', and grunt will take them, and resize them automatically, you
+      will keep the originals in local, but running the project locally will
+      use the resized ones, and he will only upload the resized ones to Firebase
+      which makes the process transparent and optimized, PLUS the images of your web
+      are 100% optimized in terms of size and compression, the project raised to B/B grade in
+      GTmetrix, the goal is A/A as you can image ;)
+      http://gtmetrix.com/reports/sloppylopez.firebaseapp.com/zWb4cfjp
+
+This 2 lines make all the validation, including displaying the custom error messages for each case
+which completely erases the boiler plate of form validation, this is the so called 'angular way'
+>< input id="username" type="email" name="email" class="form-control" ng-model="user.email" required email/>
+
+>< div ng-messages="loginForm.email.$error" ng-messages-include="views/errors.html" class="errors"></div>
+   
+##INTENDED FEATURES:   
+
+1)Manage jenkins and docker cluster with Rancher
+
 ##Travis CI-CD cycle explained
   1) We assume NO developer can commit directly to master
   
