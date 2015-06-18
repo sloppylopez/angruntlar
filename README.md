@@ -48,6 +48,34 @@ which completely erases the boiler plate of form validation, this is the so call
 
 1)Manage jenkins and docker cluster with Rancher
 
+##INTRO:
+Front-End Angular, Back-End Nodejs, Docker running 3 servers with ELK stack orchestrated with Docker-compose
+
+This project it's 3 virtual machines build with docker and docker-compose for the orchestration of the 3 services, Elastic search, Logstash and Kibana, also there is a front-end angular client, and a backend nodejs that includes a elastic search client to consume rss from any website and persist them in the EL in a bulk process, then you can visualize them in the angular frontend and do the tipical text search over the rss's
+
+It can be used as a seed for a project with that structure or similar, it saves a lot of 'default work' to set everything together.
+
+There are 2 main goals in this project
+
+1)Create a 'seed' that can be reused everytime you need to build a web-app with similar characteristics
+like in this case angular, node and elk
+
+2)Use the finished version of this project to build something over it, like for example without
+entering yet in many details, extract info from the rss news stored with Spark or a similar technology
+IN REAL TIME
+
+This are the 3 separate parts :
+
+##angularclient
+Implemented using Yeoman, mild default installation, it uses Karma for testing and Grunt for building
+Includes angular-fire a implementation of firebase client for angular, we use it as a Baas (Backend
+as service), this is much more than a database, you can deploy you project in production with 1
+command, it has a nice web interface to maintain the back-end, including non-google-web-analytics,
+user management, testing console, and many nice options that erase the boiler plate of 'deploying in
+prod'/'managing a server'/'managing a backend' for your FRONT-END application, it simply works out of the box
+the project has implemented USER EMAIL VALIDATION using firebase Baas magic and angularfire modules.
+###*See how to run below
+
 ##Travis CI-CD cycle explained
   1) We assume NO developer can commit directly to master
   
