@@ -46,7 +46,7 @@ which completely erases the boiler plate of form validation, this is the so call
    
 ##INTENDED FEATURES:   
 
-1)Manage jenkins and docker cluster with Rancher
+1)Manage teamcity and docker cluster with Rancher
 
 ##INTRO:
 Front-End Angular, Back-End Nodejs, Docker running 3 servers with ELK stack orchestrated with Docker-compose
