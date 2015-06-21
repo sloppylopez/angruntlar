@@ -8,7 +8,8 @@
 
 <a href="http://sloppylopez.com/">sloppylopez.com</a>
 
-the build failing for this reason:There seem to be a problem with npm and Travis
+the build failing for this reason:There seem to be a problem with npm and Travis  
+https://github.com/npm/npm/issues/8631
 
 ##FEATURES SO FAR:
 1) CI and CD with Travis, Code climate and Firebase, plus code climate it's integrated with github issues
