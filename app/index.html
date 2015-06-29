@@ -1,91 +1,94 @@
 <!doctype html>
 <html class="no-js" ng-app="angularClientApp" ng-strict-di>
 <head>
-  <meta charset="utf-8">
-  <meta name="google-site-verification" content="AMjlHQDz6wRzoKht4Qkc5BnmTLE2pmJq6vfWVN6t78s"/>
-  <title>Sloppy Lopez</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <link rel="shortcut icon" href="/favicon.ico">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css(.) styles/vendor.css -->
-  <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/ng-notify/src/styles/ng-notify.css" />
-  <!-- endbower -->
-  <!-- endbuild -->
-  <!-- build:css(.tmp) styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
-  <!-- build:js scripts/vendor/modernizr.js -->
-  <script src="bower_components/modernizr/modernizr.js"></script>
-  <!-- endbuild -->
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="AMjlHQDz6wRzoKht4Qkc5BnmTLE2pmJq6vfWVN6t78s"/>
+    <title>Sloppy Lopez</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/ng-notify/src/styles/ng-notify.css"/>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
 
 </head>
 <body>
 <!--[if lt IE 10]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-  your browser</a> to improve your experience.</p>
+    your browser</a> to improve your experience.</p>
 <![endif]-->
 
 <div class="container">
-  <div class="header">
-    <ul class="nav nav-pills pull-right">
-      <li><a ng-href="/#/home">Home</a></li>
-        <li><a ng-href="/#/rssfeeder">Rss Viewer</a></li>
-      <li><a ng-href="/#/authwithpassword">Login</a></li>
-      <li><a ng-href="/#/resetpassword">Reset</a></li>
-      <li><a ng-show="authData" ng-href="/#/logout">Logout</a></li>
-    </ul>
-    <h3 class="text-muted">ڪloπ</h3>
-  </div>
+    <div class="header">
+        <ul class="nav nav-pills pull-right">
+            <li><a ng-href="/#/home">Home</a></li>
+            <li><a ng-href="/#/rssfeeder">Rss Viewer</a></li>
+            <li><a ng-href="/#/authwithpassword">Login</a></li>
+            <li><a ng-href="/#/resetpassword">Reset</a></li>
+            <li><a ng-show="authData" ng-href="/#/logout">Logout</a></li>
+        </ul>
+        <h3 class="text-muted">ڪloπ</h3>
+    </div>
 
-  <div ng-view></div>
+    <div ng-view></div>
 
-  <div class="footer">
-      <a href="mailto:sloppy@sloppylopez.com">sloppy<span
-              class="glyphicon glyphicon-fire red"></span>sloppylopez.com</a>
-
-    <div class="navcontainer">
-      <ul>
-        <li><a href="http://docker.com"><img src="/images/resized/38x38/docker-thumbnail.png" alt="docker"
-                                             height="38" width="38"/></a></li>
-        <li><a href="http://www.firebase.com/docs/web/libraries/angular"><img alt="angularfire"
-                                                                              src="/images/resized/38x38/angularfire-thumbnail.png"
-                                                                              height="38" width="38"/></a></li>
-        <li><a href="http://yeoman.io"><img src="/images/resized/38x38/yeoman-thumbnail.png" alt="yeoman"
-                                            height="38" width="38"/></a></li>
-        <li><a href="http://gruntjs.com"><img src="/images/resized/38x38/grunt-thumbnail.png" alt="grunt"
-                                              height="38" width="38"/></a></li>
-        <li><a href="http://bower.io"><img src="/images/resized/38x38/bower-thumbnail.png" alt="bower" height="38"
-                                           width="38"/></a></li>
-        <li><a href="http://modernizr.com"><img src="/images/resized/38x38/modernizr-thumbnail.jpg" alt="modernizr"
-                                                height="38" width="38"/></a>
-        </li>
-        <li><a href="http://sass-lang.com"><img src="/images/resized/38x38/sass-thumbnail.png" alt="sass"
-                                                height="38" width="38"/></a></li>
-        <li><a href="http://nodejs.org"><img src="/images/resized/38x38/nodejs-thumbnail.png" alt="nodejs"
-                                             height="38" width="38"/></a></li>
-        <li><a href="https://www.elastic.co/products/elasticsearch"><img alt="elasticsearch"
-                                                                         src="/images/resized/38x38/elasticsearch-thumbnail.png"
+    <div class="footer">
+        <a href="mailto:sloppy@sloppylopez.com">sloppy<span
+                class="glyphicon glyphicon-fire red"></span>sloppylopez.com</a>
+        <br/>
+        <br/>
+        <div class="navcontainer">
+            <ul>
+                <li><a href="http://docker.com"><img src="/images/resized/38x38/docker-thumbnail.png" alt="docker"
+                                                     height="38" width="38"/></a></li>
+                <li><a href="http://www.firebase.com/docs/web/libraries/angular"><img alt="angularfire"
+                                                                                      src="/images/resized/38x38/angularfire-thumbnail.png"
+                                                                                      height="38" width="38"/></a></li>
+                <li><a href="http://yeoman.io"><img src="/images/resized/38x38/yeoman-thumbnail.png" alt="yeoman"
+                                                    height="38" width="38"/></a></li>
+                <li><a href="http://gruntjs.com"><img src="/images/resized/38x38/grunt-thumbnail.png" alt="grunt"
+                                                      height="38" width="38"/></a></li>
+                <li><a href="http://bower.io"><img src="/images/resized/38x38/bower-thumbnail.png" alt="bower"
+                                                   height="38"
+                                                   width="38"/></a></li>
+                <li><a href="http://modernizr.com"><img src="/images/resized/38x38/modernizr-thumbnail.jpg"
+                                                        alt="modernizr"
+                                                        height="38" width="38"/></a>
+                </li>
+                <li><a href="http://sass-lang.com"><img src="/images/resized/38x38/sass-thumbnail.png" alt="sass"
+                                                        height="38" width="38"/></a></li>
+                <li><a href="http://nodejs.org"><img src="/images/resized/38x38/nodejs-thumbnail.png" alt="nodejs"
+                                                     height="38" width="38"/></a></li>
+                <li><a href="https://www.elastic.co/products/elasticsearch"><img alt="elasticsearch"
+                                                                                 src="/images/resized/38x38/elasticsearch-thumbnail.png"
+                                                                                 height="38"
+                                                                                 width="38"/></a></li>
+                <li><a href="http://www.elastic.co/products/kibana"><img alt="kibana"
+                                                                         src="/images/resized/38x38/kibana-thumbnail.png"
                                                                          height="38"
                                                                          width="38"/></a></li>
-        <li><a href="http://www.elastic.co/products/kibana"><img alt="kibana"
-                                                                 src="/images/resized/38x38/kibana-thumbnail.png"
-                                                                 height="38"
-                                                                 width="38"/></a></li>
-        <li><a href="http://logstash.net"><img src="/images/resized/38x38/logstash-thumbnail.png" alt="logstash"
-                                               height="38"
-                                               width="38"/></a></li>
-        <li><a href="https://travis-ci.org/sloppylopez/docker_elk_stack"><img alt="travis"
-                                                                              src="/images/resized/38x38/travis-thumbnail.png"
-                                                                              height="38" width="38"/></a></li>
-        <li><a href="https://github.com/sloppylopez/docker_elk_stack"><img alt="github"
-                                                                           src="/images/resized/38x38/github-thumbnail.png"
-                                                                           height="38" width="38"/></a></li>
-      </ul>
-      </ul>
+                <li><a href="http://logstash.net"><img src="/images/resized/38x38/logstash-thumbnail.png" alt="logstash"
+                                                       height="38"
+                                                       width="38"/></a></li>
+                <li><a href="https://travis-ci.org/sloppylopez/docker_elk_stack"><img alt="travis"
+                                                                                      src="/images/resized/38x38/travis-thumbnail.png"
+                                                                                      height="38" width="38"/></a></li>
+                <li><a href="https://github.com/sloppylopez/docker_elk_stack"><img alt="github"
+                                                                                   src="/images/resized/38x38/github-thumbnail.png"
+                                                                                   height="38" width="38"/></a></li>
+            </ul>
+            </ul>
+        </div>
     </div>
-  </div>
 
 </div>
 
@@ -127,8 +130,8 @@
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
         a = s.createElement(o),
                 m = s.getElementsByTagName(o)[0];
         a.async = 1;
