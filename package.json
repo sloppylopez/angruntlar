@@ -64,7 +64,7 @@
       "lint",
       "firebase deploy"
     ],
-    "lint": "jshint .",
+    "lint": "grunt jshint",
     "validate": "npm ls"
   },
   "engines": {
