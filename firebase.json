@@ -1,5 +1,5 @@
 {
-  "firebase": "sloppylopez",
+  "firebase": "sloppy",
   "public": "./dist",
   "ignore": [
     "firebase.json",
