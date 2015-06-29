@@ -19,6 +19,8 @@ sudo ln -s /usr/bin/nodejs /usr/bin/node
 #Install npm global dependencies
 sudo npm install -g codeclimate-test-reporter grunt-cli bower firebase-tools yo generator-karma generator-angular karma-cli
 
+npm install graceful-fs semver
+
 #Check versions of installed dependencies
 nodejs -v
 npm -v

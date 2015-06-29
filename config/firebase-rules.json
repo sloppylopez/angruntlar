@@ -1,4 +1,4 @@
-//PASTE THIS INFO IN YOUR FIREBASE CONSOLE RULES, tp acces paste the name of your firebase database in a browser.
+//PASTE THIS INFO IN YOUR FIREBASE CONSOLE RULES, to access paste the name of your firebase database in a browser or use vulcan plug in for chrome.
 // sloppy L
 {
   "rules": {

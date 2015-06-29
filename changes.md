@@ -4,6 +4,19 @@
           and prepare travis to test ONLY angular, because it seems he it's not able to test
           the docker build, shame...
           https://github.com/travis-ci/travis-ci/issues/1196
+          However we will fix this using Jenkins (MAJOR)
+        * grunt-karma background test does not generate reports (MINOR)
+
+    FEATURES ADDED:
+        * Angular 1.4.0
+        * Added cookie message to home for legal reasons
+
+## 1.0.0-feel-like-a-sir
+    KNOWN BUGS:
+        * Nasty issue that i don't like, i will think what to do with this
+          and prepare travis to test ONLY angular, because it seems he it's not able to test
+          the docker build, shame...
+          https://github.com/travis-ci/travis-ci/issues/1196
           However we will fix this using Jenkins
         * grunt-karma background test does not generate reports
           

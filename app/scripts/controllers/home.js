@@ -8,6 +8,10 @@
  * Controller of the angularClientApp
  */
 angular.module('angularClientApp')
-  .controller('HomeCtrl', ['$scope', function ($scope) {
-    $scope.message = 'Click & Live, Bang!';
-  }]);
+    .controller('HomeCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
+        $scope.message = 'Click & Live, Bang!';
+        //$rootScope.ngNotify.set('This website uses cookies, please accept to continue', {type: 'info', sticky: true});
+        $rootScope.ngNotify.set('This website uses cookies, close this message to accept and continue', {
+            sticky: true
+        });
+    }]);
