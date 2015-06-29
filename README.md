@@ -28,7 +28,9 @@
 
 7) Completely logicless form validation using new angular 1.3 directive ng-messages
 
-8) grunt-responsive-images: this is yet another nice boiler plate removal out-of-the-box
+8) Angular 1.4.0
+
+9) grunt-responsive-images: this is yet another nice boiler plate removal out-of-the-box
       just put any image in the folder 'images' under a folder specifying the width
       and heigh '38x38', and grunt will take them, and resize them automatically, you
       will keep the originals in local, but running the project locally will
