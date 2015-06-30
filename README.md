@@ -171,6 +171,6 @@ the project has implemented USER EMAIL VALIDATION using firebase Baas magic and 
   grunt serve:dist
 
 
-## ng-Notify Advanced Usage
+## ngtoast Advanced Usage (notifications)
 
-https://github.com/matowens/ng-notify
+https://github.com/tameraydin/ngToast
