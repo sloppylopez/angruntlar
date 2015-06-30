@@ -10,7 +10,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/ng-notify/src/styles/ng-notify.css"/>
+    <link rel="stylesheet" href="bower_components/ng-notify/src/styles/ng-notify.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -28,18 +28,36 @@
 <![endif]-->
 
 <div class="container">
-    <div class="header">
-        <ul class="nav nav-pills pull-right">
-            <li><a ng-href="/#/home">Home</a></li>
-            <li><a ng-href="/#/rssfeeder">Rss Viewer</a></li>
-            <li><a ng-href="/#/authwithpassword">Login</a></li>
-            <li><a ng-href="/#/resetpassword">Reset</a></li>
-            <li><a ng-show="authData" ng-href="/#/logout">Logout</a></li>
-        </ul>
-        <h3 class="text-muted">ڪloπ</h3>
-    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top navbar-custom">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">ڪloπ</a>
+            </div>
 
-    <div ng-view></div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a ng-href="/#/home">Home</a></li>
+                    <li><a ng-href="/#/rssfeeder">Rss Viewer</a></li>
+                    <li><a ng-href="/#/authwithpassword">Login</a></li>
+                    <li><a ng-href="/#/resetpassword">Reset</a></li>
+                    <li><a ng-show="authData" ng-href="/#/logout">Logout</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div ng-view class="ngview-frame"></div>
 
     <div class="footer">
         <a href="mailto:sloppy@sloppylopez.com">sloppy<span
