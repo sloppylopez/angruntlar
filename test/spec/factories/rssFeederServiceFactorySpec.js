@@ -2,13 +2,13 @@
 
 describe('rssFeederServiceFactory Spec', function () {
 
-  var rssFeederServiceFactory, ngNotify, $q;
+  var rssFeederServiceFactory, ngToast, $q;
 
   beforeEach(module('angularClientApp'));
 
-  beforeEach(inject(function (_rssFeederServiceFactory_, _ngNotify_, _$q_) {
+  beforeEach(inject(function (_rssFeederServiceFactory_, _ngToast_, _$q_) {
     rssFeederServiceFactory = _rssFeederServiceFactory_;
-    ngNotify = _ngNotify_;
+    ngToast = _ngToast_;
     $q = _$q_;
   }));
 
@@ -19,7 +19,7 @@ describe('rssFeederServiceFactory Spec', function () {
     spyOn(rssFeederServiceFactory, '_errorCallBack').and.callThrough();
     rssFeederServiceFactory.rssFeeder('*');
     rssFeederServiceFactory._successCallBack(def)(resp);
-    rssFeederServiceFactory._errorCallBack(def, ngNotify)(error);
+    rssFeederServiceFactory._errorCallBack(def, ngToast)(error);
     expect(rssFeederServiceFactory.rssFeeder).toHaveBeenCalled();
     expect(rssFeederServiceFactory._successCallBack).toHaveBeenCalled();
     expect(rssFeederServiceFactory._errorCallBack).toHaveBeenCalled();

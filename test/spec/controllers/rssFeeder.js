@@ -1,10 +1,10 @@
 'use strict';
 describe('RssFeederCtrl', function () {
-  var controller, scope, rssFeederServiceFactory, $q, ngNotify, def;
+  var controller, scope, rssFeederServiceFactory, $q, ngToast, def;
 
   beforeEach(module('angularClientApp'));
 
-  beforeEach(inject(function (_$controller_, _$rootScope_, _rssFeederServiceFactory_, _$q_, _ngNotify_) {
+  beforeEach(inject(function (_$controller_, _$rootScope_, _rssFeederServiceFactory_, _$q_, _ngToast_) {
     $q = _$q_;
     def = $q.defer();
     scope = _$rootScope_.$new();
@@ -12,7 +12,7 @@ describe('RssFeederCtrl', function () {
       $scope: scope
     });
     rssFeederServiceFactory = _rssFeederServiceFactory_;
-    ngNotify = _ngNotify_;
+    ngToast = _ngToast_;
   }));
 
   describe('rssFeeder Controller', function () {

@@ -18,7 +18,10 @@ angular.module('angularClientApp')
               redirectService.redirectTo('/');
             });
         } else {
-          $rootScope.ngNotify.set('There are still invalid fields', {type: 'error'});
+            $rootScope.ngToast.create({
+                className: 'danger',
+                content: 'There are still invalid fields'
+            });
         }
       };
     }]);

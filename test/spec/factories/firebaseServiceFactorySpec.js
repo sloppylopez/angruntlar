@@ -2,21 +2,21 @@
 
 describe('firebaseServiceFactory Spec', function () {
 
-  var $scope, $rootScope, firebaseServiceFactory, $q, def, ngNotify, authData, error, email;
+  var $scope, $rootScope, firebaseServiceFactory, $q, def, ngToast, authData, error, email;
 
   beforeEach(module('angularClientApp'));
 
-  beforeEach(inject(function (_$controller_, _$rootScope_, _firebaseServiceFactory_, _$q_, _ngNotify_) {
+  beforeEach(inject(function (_$controller_, _$rootScope_, _firebaseServiceFactory_, _$q_, _ngToast_) {
     $q = _$q_;
     def = $q.defer();
-    ngNotify = _ngNotify_;
+    ngToast = _ngToast_;
     $scope = _$rootScope_.$new();
     email = {email: 'dummy@email.com'};
     error = {error: 'dummy imaginary error'};
     authData = {password: email};
     $scope.user = email;
     $rootScope = _$rootScope_;
-    $rootScope.ngNotify = ngNotify;
+    $rootScope.ngToast = ngToast;
     $rootScope.fbRef = jasmine.createSpyObj('fbRef', ['resetPassword', 'authWithPassword', 'createUser', 'unauth']);
     firebaseServiceFactory = _firebaseServiceFactory_;
   }));

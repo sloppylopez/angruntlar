@@ -16,7 +16,7 @@ angular.module('angularClientApp', [
   'ngSanitize',
   'ngTouch',
   'ngMessages',
-  'ngNotify',
+  'ngToast',
   'elasticsearch',
   'firebase'
 ]);

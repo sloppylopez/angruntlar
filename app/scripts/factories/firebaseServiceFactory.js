@@ -5,7 +5,10 @@ angular.module('angularClientApp')
       return {
         logout: function ($scope, $rootScope, redirectTo) {
           $rootScope.fbRef.unauth();
-          $rootScope.ngNotify.set('Good bye', {type: 'info'});
+            $rootScope.ngToast.create({
+                className: 'info',
+                content: 'good bye'
+            });
           $location.path(redirectTo);
         },
         resetPassword: function ($scope, $rootScope) {
@@ -19,10 +22,16 @@ angular.module('angularClientApp')
         _resetPasswordCallback: function (def, $rootScope) {
           return function (error) {
             if (error) {
-              $rootScope.ngNotify.set('Error resetting password:' + error, {type: 'error'});
+                $rootScope.ngToast.create({
+                    className: 'danger',
+                    content: 'Error resetting password:' + error
+                });
               def.reject(error);
             } else {
-              $rootScope.ngNotify.set('Password reset email sent successfully!', {type: 'success'});
+                $rootScope.ngToast.create({
+                    className: 'success',
+                    content: 'Password reset email sent successfully!'
+                });
               def.resolve();
             }
           };
@@ -40,10 +49,16 @@ angular.module('angularClientApp')
         _authWithPasswordCallBack: function ($rootScope, $scope, def) {
           return function (error, authData) {
             if (error) {
-              $rootScope.ngNotify.set('Login Failed ' + error, {type: 'error'});
+                $rootScope.ngToast.create({
+                    className: 'error',
+                    content: 'Login Failed ' + error
+                });
               def.reject(error);
             } else {
-              $rootScope.ngNotify.set('Authenticated successfully ' + authData.password.email, {type: 'success'});
+                $rootScope.ngToast.create({
+                    className: 'success',
+                    content: 'Authenticated successfully ' + authData.password.email
+                });
               $rootScope.authData = authData;
               def.resolve(authData);
             }
@@ -60,7 +75,10 @@ angular.module('angularClientApp')
         _createUserCallBack: function (model, $rootScope, $scope) {
           return function (error, authData) {
             if (error) {
-              $rootScope.ngNotify.set(error, {type: 'error'});
+                $rootScope.ngToast.create({
+                    className: 'error',
+                    content: error
+                });
             } else {
               model.resetPassword($scope, $rootScope);
             }
