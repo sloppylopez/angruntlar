@@ -14,7 +14,10 @@ angular.module('angularClientApp')
         if (isValid) {
           firebaseServiceFactory.createUser($scope, $rootScope);
         } else {
-          $rootScope.ngNotify.set('There are still invalid fields', {type: 'error'});
+            $rootScope.ngToast.create({
+                className: 'danger',
+                content: 'There are still invalid fields'
+            });
         }
       };
     }]);

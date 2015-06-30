@@ -1,10 +1,10 @@
 'use strict';
 describe('ResetPasswordCtrl', function () {
-  var controller, scope, $location, firebaseServiceFactory, $q, ngNotify, def;
+  var controller, scope, $location, firebaseServiceFactory, $q, ngToast, def;
 
   beforeEach(module('angularClientApp'));
 
-  beforeEach(inject(function (_$controller_, _$rootScope_, _$location_, _firebaseServiceFactory_, _$q_, _ngNotify_) {
+  beforeEach(inject(function (_$controller_, _$rootScope_, _$location_, _firebaseServiceFactory_, _$q_, _ngToast_) {
     $q = _$q_;
     def = $q.defer();
     scope = _$rootScope_.$new();
@@ -13,7 +13,7 @@ describe('ResetPasswordCtrl', function () {
     });
     $location = _$location_;
     firebaseServiceFactory = _firebaseServiceFactory_;
-    ngNotify = _ngNotify_;
+    ngToast = _ngToast_;
   }));
 
   describe('resetPassword Controller', function () {
@@ -25,9 +25,9 @@ describe('ResetPasswordCtrl', function () {
       scope.$digest();           // This makes sure that all callbacks of promises will be called
     });
     it('submit should fail when called with invalid parameters', function () {
-      spyOn(ngNotify, 'set').and.returnValue(def.promise);
+      spyOn(ngToast, 'create').and.returnValue(def.promise);
       scope.resetPassword(false);
-      expect(ngNotify.set).toHaveBeenCalled();
+      expect(ngToast.create).toHaveBeenCalled();
     });
   });
 });

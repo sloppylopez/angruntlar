@@ -4,12 +4,12 @@ describe('authWithPasswordCtrl', function () {
 
   beforeEach(module('angularClientApp'));
 
-  beforeEach(inject(function (_$controller_, _$rootScope_, _firebaseServiceFactory_, _$q_, _ngNotify_) {
+  beforeEach(inject(function (_$controller_, _$rootScope_, _firebaseServiceFactory_, _$q_, _ngToast_) {
     $q = _$q_;
     def = $q.defer();
     scope = _$rootScope_.$new();
     $rootScope = _$rootScope_;
-    $rootScope.ngNotify = _ngNotify_;
+    $rootScope.ngToast = _ngToast_;
     controller = _$controller_('AuthWithPasswordCtrl', {
       $scope: scope
     });
