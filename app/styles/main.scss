@@ -64,7 +64,8 @@ body {
   }
   h2 {
     font-weight: 800;
-    font-size:36px;
+    font-size: 36px;
+    margin-top: 0px;
   }
   footer p {
     font-size: 28px;
@@ -103,8 +104,9 @@ body {
   opacity: 0.8;
   filter: alpha(opacity=80); /* For IE8 and earlier */
 }
+
 //Header
-.intro-header{
+.intro-header {
   position: relative;
   bottom: 20px;
   height: 226px;
@@ -118,7 +120,7 @@ body {
   position: relative;
 }
 
-.subheading{
+.subheading {
   font-size: 24px;
   line-height: 1.1;
   display: block;
