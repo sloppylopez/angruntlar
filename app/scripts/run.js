@@ -32,7 +32,7 @@ angular.module('angularClientApp')
                 $rootScope.authData = undefined;
                 $rootScope.ngToast.create({
                     className: 'info',
-                    content: 'good bye'
+                    content: 'Good bye'
                 });
             }
         });
