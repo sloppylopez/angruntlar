@@ -48,7 +48,7 @@ angular.module('angularClientApp')
     })
     .config(function (ngToastProvider) {
         ngToastProvider.configure({
-            animation: 'slide', // or 'fade'
+            animation: 'slide', //  or 'fade'
             dismissOnClick: true,
             horizontalPosition: 'center',
             maxNumber: 1,
