@@ -13,7 +13,7 @@ angular.module('angularClientApp')
         //$rootScope.ngToast.set('This website uses cookies, please accept to continue', {type: 'info', sticky: true});
         $rootScope.ngToast.create({
             className: 'info',
-            content: 'This website uses cookies, close this message to accept and continue',
+            content: 'Web use cookies, close to accept',
             dismissOnClick: false,
             dismissButton: true,
             dismissOnTimeout: false,
