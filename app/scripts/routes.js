@@ -6,7 +6,7 @@
  * # routes.js
  */
 angular.module('angularClientApp')
-    .config(['$routeProvider', function ($routeProvider) {
+    .config(function ($routeProvider) {
         $routeProvider
             .when('/', {
                 templateUrl: 'views/blog.html',
@@ -36,7 +36,7 @@ angular.module('angularClientApp')
             .when('/addpost', {
                 templateUrl: 'views/addPost.html',
                 controller: 'AddPostCtrl',
-                loginRequired: false
+                loginRequired: true
             })
             .when('/logout', {
                 controller: 'LogoutCtrl',
@@ -45,8 +45,8 @@ angular.module('angularClientApp')
                 resetCredentials: true
             })
             .otherwise({redirectTo: '/'});
-    }])
-    .config(['ngToastProvider', function (ngToastProvider) {
+    })
+    .config(function (ngToastProvider) {
         ngToastProvider.configure({
             animation: 'slide', // or 'fade'
             dismissOnClick: true,
@@ -55,4 +55,4 @@ angular.module('angularClientApp')
             timeout: 3000,
             dismissOnTimeout: true
         });
-    }]);
+    });

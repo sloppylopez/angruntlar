@@ -1,6 +1,6 @@
 'use strict';
 angular.module('angularClientApp')
-    .factory('firebaseServiceFactory', ['firebaseFactory', '$location', '$q',
+    .factory('firebaseServiceFactory',
         function (firebaseFactory, $location, $q) {
             return {
                 logout: function ($scope, $rootScope, redirectTo) {
@@ -90,5 +90,5 @@ angular.module('angularClientApp')
                     return randomString;
                 }
             };
-        }]
+        }
 );

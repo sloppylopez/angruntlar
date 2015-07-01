@@ -6,7 +6,7 @@
  * # run.js
  */
 angular.module('angularClientApp')
-    .run(['$rootScope', '$location', 'firebaseFactory', 'FB_USER', 'ngToast', function ($rootScope, $location, firebaseFactory, FB_USER, ngToast) {
+    .run(function ($rootScope, $location, firebaseFactory, FB_USER, ngToast) {
         $rootScope.fbRef = firebaseFactory.getFireBaseRef(FB_USER);//TODO ensure it's not calling the real firebase while testing
         $rootScope.ngToast = ngToast;
         $rootScope.$on('$routeChangeStart', function (event, next) {
@@ -26,4 +26,4 @@ angular.module('angularClientApp')
                 });
             }
         });
-    }]);
+    });

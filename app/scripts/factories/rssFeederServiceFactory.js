@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angularClientApp')
-  .service('rssFeederServiceFactory', ['esClientFactory', '$q', 'ES_IP', 'ES_PORT', 'ngToast',
+  .service('rssFeederServiceFactory',
     function (esClientFactory, $q, ES_IP, ES_PORT, ngToast) {
       return {
         _query: function (queryTerm) {
@@ -62,7 +62,7 @@ angular.module('angularClientApp')
           return deferred.promise;
         }
       };
-    }]
+    }
 );
 
 
