@@ -45,7 +45,7 @@ angular.module('angularClientApp')
         _errorCallBack: function (deferred, ngToast) {
           return function (err) {
               ngToast.create({
-                  className: 'error',
+                  className: 'danger',
                   content: err.message
               });
             deferred.reject(null);

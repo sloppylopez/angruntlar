@@ -20,9 +20,6 @@ angular.module('angularClientApp')
         //    });
         $rootScope.ngToast = ngToast;
         $rootScope.$on('$routeChangeStart', function (event, next) {
-            if (next.resetCredentials) {
-                $rootScope.authData = undefined;
-            }
             if (next.loginRequired && typeof $rootScope.authData === 'undefined') {
                 event.defaultPrevented = true;
                 $rootScope.ngToast.create({
@@ -30,6 +27,13 @@ angular.module('angularClientApp')
                     content: 'You need to be logged for that'
                 });
                 $location.path('/authwithpassword');
+            }
+            if (next.resetCredentials) {
+                $rootScope.authData = undefined;
+                $rootScope.ngToast.create({
+                    className: 'info',
+                    content: 'good bye'
+                });
             }
         });
     }]);
