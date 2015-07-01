@@ -1,4 +1,4 @@
-<form fade-in name="createUserForm" novalidate
+<form name="createUserForm" novalidate
       ng-submit="createUser(createUserForm.$valid)">
   <div class="form-group" ng-messages="createUserForm.email.$error">
     <label>Email</label>
@@ -7,7 +7,7 @@
     <div ng-messages-include="views/errors.html" class="errors"></div>
   </div>
   <div class="form-group">
-    <button type="submit" class="btn btn-primary">Create</button>
+    <button fade-in type="submit" class="btn btn-primary">Create</button>
   </div>
 </form>
 
