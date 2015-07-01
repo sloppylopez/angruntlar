@@ -1,5 +1,5 @@
 'use strict';
-describe('ResetPasswordCtrl', function () {
+describe('Controller: ResetPasswordCtrl', function () {
   var controller, scope, $location, firebaseServiceFactory, $q, ngToast, def;
 
   beforeEach(module('angularClientApp'));

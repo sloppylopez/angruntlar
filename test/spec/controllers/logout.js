@@ -1,5 +1,5 @@
 'use strict';
-describe('LogoutCtrl', function () {
+describe('Controller: LogoutCtrl', function () {
   var controller, scope, $location, firebaseServiceFactory, $q, $window, def;
 
   beforeEach(module('angularClientApp'));

@@ -172,8 +172,12 @@ the project has implemented USER EMAIL VALIDATION using firebase Baas magic and 
 
 
 ## ngtoast Advanced Usage (notifications)
-
 https://github.com/tameraydin/ngToast
 
 ## info sources
+http://www.appelsiini.net/projects/lazyload
+https://github.com/fraywing/textAngular
+
+## TO BE DONE
+start using jsDelivr
 http://www.appelsiini.net/projects/lazyload
