@@ -1,5 +1,5 @@
 'use strict';
-describe('CreateUserCtrl', function () {
+describe('Controller: CreateUserCtrl', function () {
   var controller, scope, firebaseServiceFactory, $q, def;
 
   beforeEach(module('angularClientApp'));

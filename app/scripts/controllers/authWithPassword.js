@@ -8,7 +8,7 @@
  * Controller of the angularClientApp
  */
 angular.module('angularClientApp')
-  .controller('AuthWithPasswordCtrl', ['$scope', '$rootScope', 'firebaseServiceFactory', 'redirectService',
+  .controller('AuthWithPasswordCtrl',
     function ($scope, $rootScope, firebaseServiceFactory, redirectService) {
       $scope.authWithPassword = function (isValid) {
         if (isValid) {
@@ -24,5 +24,5 @@ angular.module('angularClientApp')
             });
         }
       };
-    }]);
+    });
 

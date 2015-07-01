@@ -1,4 +1,4 @@
-## 1.0.5-feel-like-a-sir
+## 1.0.6-feel-like-a-sir
     KNOWN BUGS:
         * Nasty issue that i don't like, i will think what to do with this
           and prepare travis to test ONLY angular, because it seems he it's not able to test
@@ -9,6 +9,7 @@
 
     FEATURES ADDED:
         * changed fade-in directive to buttons only, it makes it more smooth
+        * Added textAngular WYSIWYG editor for adding posts
 
 ## 1.0.4-feel-like-a-sir
     KNOWN BUGS:

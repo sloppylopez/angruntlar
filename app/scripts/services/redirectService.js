@@ -1,7 +1,7 @@
 'use strict';
 angular.module('angularClientApp')
-  .service('redirectService', ['$location', function ($location) {
+  .service('redirectService', function ($location) {
     this.redirectTo = function (redirectTo) {
       $location.path(redirectTo);
     };
-  }]);
+  });

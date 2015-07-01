@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angularClientApp')
-  .factory('esClientFactory', ['esFactory', function (esFactory) {
+  .factory('esClientFactory', function (esFactory) {
     return {
       getElasticSearchRef: function (ip, port) {
         return esFactory({
@@ -10,5 +10,5 @@ angular.module('angularClientApp')
         });
       }
     };
-  }]
+  }
 );

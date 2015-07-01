@@ -8,7 +8,7 @@
  * Controller of the angularClientApp
  */
 angular.module('angularClientApp')
-  .controller('ResetPasswordCtrl', ['$scope', '$rootScope', 'firebaseServiceFactory', 'redirectService',
+  .controller('ResetPasswordCtrl',
     function ($scope, $rootScope, firebaseServiceFactory, redirectService) {
       $scope.resetPassword = function (isValid) {
         if (isValid) {
@@ -23,5 +23,5 @@ angular.module('angularClientApp')
             });
         }
       };
-    }]);
+    });
 

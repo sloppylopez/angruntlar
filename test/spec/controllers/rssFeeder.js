@@ -1,5 +1,5 @@
 'use strict';
-describe('RssFeederCtrl', function () {
+describe('Controller: RssFeederCtrl', function () {
   var controller, scope, rssFeederServiceFactory, $q, ngToast, def;
 
   beforeEach(module('angularClientApp'));

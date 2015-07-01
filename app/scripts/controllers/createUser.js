@@ -8,7 +8,7 @@
  * Controller of the angularClientApp
  */
 angular.module('angularClientApp')
-  .controller('CreateUserCtrl', ['$scope', '$rootScope', 'firebaseServiceFactory',
+  .controller('CreateUserCtrl',
     function ($scope, $rootScope, firebaseServiceFactory) {
       $scope.createUser = function (isValid) {
         if (isValid) {
@@ -20,4 +20,4 @@ angular.module('angularClientApp')
             });
         }
       };
-    }]);
+    });

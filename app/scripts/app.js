@@ -14,6 +14,7 @@ angular.module('angularClientApp', [
   'ngResource',
   'ngRoute',
   'ngSanitize',
+  'textAngular',
   'ngTouch',
   'ngMessages',
   'ngToast',

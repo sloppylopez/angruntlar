@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('angularClientApp')
-  .service('rssFeederServiceFactory', ['esClientFactory', '$q', 'ES_IP', 'ES_PORT', 'ngToast',
+  .service('rssFeederServiceFactory',
     function (esClientFactory, $q, ES_IP, ES_PORT, ngToast) {
       return {
         _query: function (queryTerm) {
@@ -45,7 +45,7 @@ angular.module('angularClientApp')
         _errorCallBack: function (deferred, ngToast) {
           return function (err) {
               ngToast.create({
-                  className: 'error',
+                  className: 'danger',
                   content: err.message
               });
             deferred.reject(null);
@@ -62,7 +62,7 @@ angular.module('angularClientApp')
           return deferred.promise;
         }
       };
-    }]
+    }
 );
 
 

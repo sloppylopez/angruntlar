@@ -1,5 +1,5 @@
 'use strict';
-describe('authWithPasswordCtrl', function () {
+describe('Controller: authWithPasswordCtrl', function () {
   var controller, scope, $rootScope, firebaseServiceFactory, $q, def;
 
   beforeEach(module('angularClientApp'));

@@ -8,7 +8,7 @@
  * Controller of the angularClientApp
  */
 angular.module('angularClientApp')
-  .controller('RssFeederCtrl', ['$scope', 'rssFeederServiceFactory',
+  .controller('RssFeederCtrl',
     function ($scope, rssFeederServiceFactory) {
       $scope.rssFeeder = function (queryTerm) {
         rssFeederServiceFactory.rssFeeder(queryTerm)
@@ -18,4 +18,4 @@ angular.module('angularClientApp')
       };
       //we call the first time to get all results from elastic search
       $scope.rssFeeder();
-    }]);
+    });
