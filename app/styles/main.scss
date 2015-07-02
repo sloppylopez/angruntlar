@@ -129,12 +129,12 @@ body {
 }
 
 .navbar-default .navbar-collapse {
-  padding-left: 0;
+  padding-left: 35px;
   background-color: #000;
 }
 
-.navbar-nav li a {
-  padding-left: 0;
+.navbar-defaul .navbar-nav li a {
+  padding-left: 1px;
   padding-top: 9px;
   background-color: #000;
 }
@@ -326,6 +326,10 @@ div form div div.errors {
   .footer {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .nav {
+    ppadding-left: 41px;
   }
 
   /* Space out the masthead */
