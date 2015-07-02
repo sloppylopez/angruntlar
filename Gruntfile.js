@@ -424,29 +424,13 @@ module.exports = function (grunt) {
                     cwd: '<%= config.app %>/images',
                     dest: '<%= config.app %>/images/resized/'
                 }]
-            },
-            medium: {
-                options: {
-                    sizes: [{
-                        name: 'medium',
-                        width: 100,
-                        heigh: 100
-                    }]
-                },
-                files: [{
-                    expand: true,
-                    src: ['100x100/*.{jpg,gif,png}'],
-                    cwd: '<%= config.app %>/images',
-                    dest: '<%= config.app %>/images/resized/'
-                }]
             }
         }
     });
 
     grunt.registerTask('resize', [
         'clean:resized',
-        'responsive_images:thumbnail',
-        'responsive_images:medium'
+        'responsive_images:thumbnail'
     ]);
 
     grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
@@ -461,7 +445,6 @@ module.exports = function (grunt) {
             'clean:server',
             'wiredep',
             'responsive_images:thumbnail',
-            'responsive_images:medium',
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',

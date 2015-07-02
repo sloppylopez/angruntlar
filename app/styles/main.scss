@@ -45,7 +45,8 @@ body {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: -12px;
+    padding-top: 24px;
 
     text-shadow: 0 1px 0 hsl(174, 5%, 80%),
     0 2px 0 hsl(174, 5%, 75%),
@@ -78,7 +79,7 @@ body {
 
 .ng-toast {
   position: relative;
-  margin-top: -6px;
+  margin-top: 12px;
 }
 
 /* Custom page footer */
@@ -88,18 +89,26 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+.navbar-brand {
+  padding: 15px 15px;
+}
+
 /* Custom page navbar */
 .navbar-default .navbar-nav li a, .navbar-default .navbar-brand {
   color: white;
   font-size: 24px;
 }
 
-.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-brand a:hover{
+.navbar-default .navbar-nav li a:hover, .navbar-default .navbar-brand a:hover {
   color: #428bca;
 }
 
-.navbar-default .navbar-nav li a:active{
+.navbar-default .navbar-nav li a:active {
   color: #ffff00;
+}
+
+.nav li {
+  padding-top: 5px;
 }
 
 //.navbar-default .navbar-nav li a.selected{
@@ -108,21 +117,34 @@ body {
 
 .navbar-custom {
   z-index: 9999;
-  background: #000;
+  background: #281601;
   border: 0px;
-  margin: 0px;
   padding: 0px;
-  opacity: 0.8;
-  filter: alpha(opacity=80); /* For IE8 and earlier */
+  opacity: 0.7;
+  height: 50px;
+}
+
+.container-fluid {
+  padding-left: 0;
+}
+
+.navbar-default .navbar-collapse {
+  padding-left: 0;
+  background-color: #000;
+}
+
+.navbar-nav li a {
+  padding-left: 28px;
+  background-color: black;
 }
 
 //Header
 .intro-header {
   position: relative;
   bottom: 20px;
-  height: 226px;
+  height: 340px;
   margin-top: 0;
-  background-image: url('../images/home-bg-1920x226.jpg');
+  background-image: url('../images/home-bg-1920x340.png');
 }
 
 .site-heading {

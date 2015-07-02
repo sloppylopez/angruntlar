@@ -10,6 +10,7 @@
     FEATURES ADDED:
         * changed fade-in directive to buttons only, it makes it more smooth
         * Added textAngular WYSIWYG editor for adding posts
+        * Added nice banner
 
 ## 1.0.4-feel-like-a-sir
     KNOWN BUGS:
