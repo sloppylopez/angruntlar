@@ -179,6 +179,7 @@ https://github.com/tameraydin/ngToast
 ## info sources
 http://www.appelsiini.net/projects/lazyload
 https://github.com/fraywing/textAngular
+http://tutorialzine.com/2015/01/freebie-5-responsive-footer-templates/
 
 ## TO BE DONE
 start using jsDelivr

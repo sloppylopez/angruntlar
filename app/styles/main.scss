@@ -15,13 +15,11 @@ $font-stack: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 /* Space out content a bit */
 body {
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.marketing,
-.footer {
+.marketin {
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -46,10 +44,11 @@ body {
     color: #fff;
     text-align: center;
     letter-spacing: -12px;
-    padding-top: 0;
+    padding-top: 24px;
     position: relative;
     bottom: 23px;
-    /* top: -24px; */
+    margin: 0 auto;
+    width: 474px;
     padding-bottom: 45px;
     text-shadow: 0 1px 0 #c9cfce, 0 2px 0 #bcc2c2, 0 3px 0 #afb6b6, 0 4px 0 #a4adac, 0 5px 0 #9fa8a7, 0 6px 0 #99a3a2, 0 7px 0 #97a1a0, 0 8px 0 #949e9d, 0 0 5px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.3);
   }
@@ -57,9 +56,6 @@ body {
     font-weight: 800;
     font-size: 36px;
     margin-top: 0;
-  }
-  footer p {
-    font-size: 28px;
   }
 }
 
@@ -69,15 +65,9 @@ body {
 
 .ng-toast {
   position: relative;
-  margin-top: -33px;
+  margin-top: -36px;
 }
 
-/* Custom page footer */
-.footer {
-  padding-top: 19px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
-}
 
 .navbar-brand {
   padding: 15px 15px;
@@ -85,7 +75,7 @@ body {
 
 /* Custom page navbar */
 .navbar-default .navbar-nav li a, .navbar-default .navbar-brand {
-  color: white;
+  color: #E47E0B;
   font-size: 24px;
 }
 
@@ -114,6 +104,10 @@ body {
   height: 50px;
 }
 
+.ngview-frame {
+  min-height: 323px;
+}
+
 .container-fluid {
   padding-left: 0;
 }
@@ -140,7 +134,7 @@ body {
 
 .site-heading {
   text-align: center;
-  top: 53px;
+  top: 58px;
   position: relative;
 }
 
@@ -199,6 +193,7 @@ $speed: 1.5s;
   width: $w;
   height: $h;
   position: absolute;
+  top: 80px;
   transition: all ease .3s;
   background: url('data:image/svg+xml;utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 684"%3E%3Cpath fill="%23010101" d="M305.7 0L0 170.9v342.3L305.7 684 612 513.2V170.9L305.7 0z"/%3E%3Cpath fill="%23fff" d="M305.7 80.1l-233.6 131 233.6 131 234.2-131-234.2-131"/%3E%3C/svg%3E') no-repeat top center;
 }
@@ -291,6 +286,10 @@ $speed: 1.5s;
   list-style-type: none;
 }
 
+.form-group {
+  padding-top: 36px;
+}
+
 //images ul
 .navcontainer ul li {
   display: inline;
@@ -312,8 +311,7 @@ div form div div.errors {
 
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
-  .footer {
+  .marketing {
     padding-left: 0;
     padding-right: 0;
   }
@@ -330,6 +328,177 @@ div form div div.errors {
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
+  }
+
+}
+
+//Footer
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+
+  padding: 40px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: #d3811a;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  font-size: 12px;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: #d3811a;
+  text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 12px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
   }
 
 }
