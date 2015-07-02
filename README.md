@@ -30,7 +30,9 @@
 
 8) Angular 1.4.0
 
-9) grunt-responsive-images: this is yet another nice boiler plate removal out-of-the-box
+9) TextAngular WYSIWYG editor for adding posts in to the blog
+
+10) grunt-responsive-images: this is yet another nice boiler plate removal out-of-the-box
       just put any image in the folder 'images' under a folder specifying the width
       and heigh '38x38', and grunt will take them, and resize them automatically, you
       will keep the originals in local, but running the project locally will
