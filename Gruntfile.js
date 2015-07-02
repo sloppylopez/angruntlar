@@ -468,7 +468,6 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'responsive_images:thumbnail',
-        'responsive_images:medium',
         'copy:dist',
         'modernizr',
         'rev',
