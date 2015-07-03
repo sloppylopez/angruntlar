@@ -25,6 +25,9 @@ body {
     font-size: 21px;
     font-weight: 600;
   }
+  label {
+    font-size: 24px;
+  }
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
@@ -319,11 +322,11 @@ $speed: 1.5s;
 }
 
 //Registration Form validation messages/
-div form div div.errors {
+body div form div div #errors {
   font-size: smaller;
   padding-top: 5px;
   padding-bottom: 10px;
-  color: red;
+  color: red !important;
 }
 
 /* Responsive: Portrait tablets and up */
