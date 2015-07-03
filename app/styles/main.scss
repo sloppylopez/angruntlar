@@ -15,10 +15,10 @@ $font-stack: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 /* Space out content a bit */
 body {
   padding-top: 20px;
-  background: #AF5160;
+  background: #AF5528;
   color: black;
   a {
-    color: #EC8606;
+    color: rgb(255, 163, 2);
   }
   p {
     margin: 0 0 10px;
@@ -69,7 +69,7 @@ body {
 }
 
 .orange {
-  color: #E47E0B;
+  color: rgb(255, 163, 2);
 }
 
 .ng-toast {
@@ -88,7 +88,7 @@ body {
 
 /* Custom page navbar */
 .navbar-default .navbar-nav li a, .navbar-default .navbar-brand, .glyphicon {
-  color: #E47E0B;
+  color: rgb(255, 163, 2);
   font-size: 24px;
 }
 
@@ -370,7 +370,7 @@ div form div div.errors {
   display: inline-block;
   vertical-align: top;
   a {
-    color: #d3811a;
+    color: rgb(255, 163, 2);
   }
 }
 
@@ -389,7 +389,7 @@ div form div div.errors {
 }
 
 .footer-distributed h3 span {
-  color: #d3811a;
+  color: rgb(255, 163, 2);
 }
 
 /* Footer links */
@@ -503,7 +503,7 @@ div form div div.errors {
 }
 
 .footer-distributed .footer-right .footer-icons a {
-  color: #d3811a;
+  color: rgb(255, 163, 2);
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
