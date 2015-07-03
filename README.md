@@ -180,6 +180,7 @@ https://github.com/tameraydin/ngToast
 http://www.appelsiini.net/projects/lazyload
 https://github.com/fraywing/textAngular
 http://tutorialzine.com/2015/01/freebie-5-responsive-footer-templates/
+https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers
 
 ## TO BE DONE
 start using jsDelivr

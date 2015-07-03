@@ -15,10 +15,10 @@ $font-stack: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 /* Space out content a bit */
 body {
   padding-top: 20px;
-  background: #E36E34;
+  background: #F0F0F0;
   color: black;
   a {
-    color: #FDE91A;
+    color: rgb(255, 163, 2);
   }
   p {
     margin: 0 0 10px;
@@ -49,16 +49,12 @@ body {
 
 .container {
   h1 {
-    font: 900 85px/1 'Source Sans Pro', Arial, sans-serif;
+    font: 900 72px/1 'Source Sans Pro', Arial, sans-serif;
     text-transform: uppercase;
-    color: rgba(222, 218, 236, 0.79);
+    color: rgba(241, 240, 247, 1);
     text-align: center;
-    letter-spacing: -12px;
-    padding-top: 24px;
-    position: relative;
-    bottom: 23px;
-    margin: 0 auto;
-    padding-bottom: 45px;
+    margin: 50px 0 0 0;
+    letter-spacing: 0px;
     text-shadow: 0 1px 0 #c9cfce, 0 2px 0 #bcc2c2, 0 3px 0 #afb6b6, 0 4px 0 #a4adac, 0 5px 0 #9fa8a7, 0 6px 0 #99a3a2, 0 7px 0 #97a1a0, 0 8px 0 #949e9d, 0 0 5px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.2), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.3);
   }
   h2 {
@@ -68,13 +64,13 @@ body {
   }
 }
 
-.yellow {
-  color: #FDE91A;
+.pink {
+  color: #EC7777;
 }
 
 .ng-toast {
   position: relative;
-  margin-top: -30px;
+  margin-top: 20px;
 }
 
 .glyphicon {
@@ -97,7 +93,7 @@ body {
 }
 
 .navbar-default .navbar-nav li a:active {
-  color: #BE5667;
+  color: #EC7777;
 }
 
 .nav li {
@@ -146,19 +142,27 @@ body {
 }
 
 .site-heading {
-  text-align: center;
-  top: 58px;
-  position: relative;
+  //  width: 50%;
+  /* margin: 0; */
+  margin: 0 auto;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: #fff;
 }
 
 .subheading {
-  font-size: 24px;
+  font-size: 29px;
   line-height: 1.1;
   display: block;
   font-weight: 300;
   margin: 10px 0 0;
-  color: white;
+  color: #fff;
   text-align: center;
+  font-family: 'Cookie';
 }
 
 .container-narrow > hr {
