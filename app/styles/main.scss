@@ -300,7 +300,13 @@ $speed: 1.5s;
 }
 
 .form-group {
-  padding-top: 36px;
+  padding-top: 0px;
+  margin-bottom: 28px;
+  height: 80px;
+}
+
+.form-control {
+  height: 43px;
 }
 
 //images ul
