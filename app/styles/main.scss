@@ -15,8 +15,15 @@ $font-stack: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 /* Space out content a bit */
 body {
   padding-top: 20px;
+  background: #AF5160;
+  color: black;
   a {
     color: #EC8606;
+  }
+  p {
+    margin: 0 0 10px;
+    font-size: 21px;
+    font-weight: 600;
   }
 }
 
@@ -106,7 +113,7 @@ body {
   background: #281601;
   border: 0;
   padding: 0;
-  opacity: 0.7;
+  opacity: 0.85;
   height: 50px;
 }
 
