@@ -4,3 +4,6 @@ bower_components
 dist
 coverage
 config
+.coverdata
+debug
+unit-test-coverage

@@ -30,6 +30,7 @@
     "it",
     "app",
     "spyOn",
-    "jasmine"
+    "jasmine",
+    "require"
   ]
 }
