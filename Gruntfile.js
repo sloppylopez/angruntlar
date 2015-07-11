@@ -459,6 +459,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'newer:jshint',
         'wiredep',
         'useminPrepare',
         'concurrent:dist',
@@ -477,6 +478,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('travis', [
         'clean:dist',
+        'newer:jshint',
         'wiredep',
         'useminPrepare',
         'concurrent:dist',
@@ -497,7 +499,4 @@ module.exports = function (grunt) {
         'newer:jshint',
         'build'
     ]);
-    grunt.log.warn('Mode:' + (process.env.TRAVIS ? 'Travis Executing' : 'User executing'));
-    // Travis CI task.
-    //grunt.registerTask('travis', 'newer:jshint');
 };
