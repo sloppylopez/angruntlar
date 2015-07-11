@@ -12,7 +12,7 @@ addons:
     packages:
     - graphicsmagick
 before_install:
-- apt-get install -y -qq graphicsmagick
+- sudo apt-get install -y -qq graphicsmagick
 - npm i -g codeclimate-test-reporter grunt-cli bower firebase-tools karma-cli
 - npm i
 - bower install
