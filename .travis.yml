@@ -7,6 +7,10 @@ branches:
   - /-job-\d+/
   only:
   - master
+addons:
+  apt:
+    packages:
+    - graphicsmagick
 before_install:
 - apt-get install -y -qq graphicsmagick
 - npm i -g codeclimate-test-reporter grunt-cli bower firebase-tools karma-cli
