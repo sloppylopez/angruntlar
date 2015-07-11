@@ -181,6 +181,7 @@ http://www.appelsiini.net/projects/lazyload
 https://github.com/fraywing/textAngular
 http://tutorialzine.com/2015/01/freebie-5-responsive-footer-templates/
 https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers
+https://github.com/travis-ci/travis-ci/issues/3505
 
 ## TO BE DONE
 start using jsDelivr

@@ -1,10 +1,10 @@
 {
   "name": "angularClient",
-  "version": "1.0.3",
+  "version": "1.1.2",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sloppylopez/docker_elk_stack/tree/master/angularclient"
+    "url": "https://github.com/sloppylopez/angularlcient"
   },
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
