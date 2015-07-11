@@ -14,7 +14,7 @@ addons:
 before_install:
 - apt-get install -y -qq graphicsmagick
 - npm i -g codeclimate-test-reporter grunt-cli bower firebase-tools karma-cli
-- npm ii
+- npm i
 - bower install
 install: npm test
 before_script:
