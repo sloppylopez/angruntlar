@@ -17,7 +17,7 @@ travis encrypt FIREBASE_PASSWORD=<YOUR_FIREBASE_PASSWORD> --add
 sudo ln -s /usr/bin/nodejs /usr/bin/node
 
 #Install npm global dependencies
-sudo npm install -g codeclimate-test-reporter grunt-cli bower firebase-tools yo generator-karma generator-angular karma-cli jshint
+sudo npm install -g grunt-cli bower firebase-tools yo generator-karma generator-angular karma-cli jshint
 
 #Check versions of installed dependencies
 nodejs -v
