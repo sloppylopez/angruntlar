@@ -475,6 +475,24 @@ module.exports = function (grunt) {
         'htmlmin'
     ]);
 
+    grunt.registerTask('travis', [
+        'clean:dist',
+        'wiredep',
+        'useminPrepare',
+        'concurrent:dist',
+        'autoprefixer',
+        'concat',
+        'ngAnnotate',
+        'cssmin',
+        'uglify',
+        'copy:dist',
+        'modernizr',
+        'rev',
+        'usemin',
+        'htmlmin'
+    ]);
+
+
     grunt.registerTask('default', [
         'newer:jshint',
         'build'

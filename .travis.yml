@@ -8,18 +8,18 @@ branches:
   only:
   - master
 before_install:
-  - npm i -g codeclimate-test-reporter grunt-cli bower firebase-tools karma-cli
-  - npm i
-  - bower install
-install: npm test
+install:
+- npm i -g codeclimate-test-reporter grunt-cli bower firebase-tools karma-cli
+- npm i
+- bower install
 before_script:
-- grunt build
-script:
+script: npm test
+after_script:
 - echo "${TRAVIS_PULL_REQUEST}"
 - echo "${TRAVIS_BRANCH}"
-after_script:
 - codeclimate < ./coverage/**/lcov.info
 after_success:
+- grunt travis
 - if [[ "${TRAVIS_PULL_REQUEST}" == "false" ]]; then echo -e "${FIREBASE_USER}\n${FIREBASE_PASSWORD}"
   | firebase login;firebase deploy; fi
 env:
