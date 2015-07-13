@@ -1,5 +1,5 @@
 <div>
-  <span>{{ message }}</span>
+    <span>{{::message}}</span>
 
   <div class="jumbotron">
     <label for="search">Search</label>
@@ -9,13 +9,13 @@
 
   <article class="fixrss" ng-repeat="n in news">
     <div>
-      <h2><a class="small-font" href="{{n._source.link}}">{{n._source.title}}</a></h2>
+        <h2><a class="small-font" href="{{::n._source.link}}">{{::n._source.title}}</a></h2>
 
-      <p>{{n._source.pubdate}}</p>
+        <p>{{::n._source.pubdate}}</p>
 
       <div ng-bind-html="n._source.description">
       </div>
-      <footer><p>{{n._source.author}}</footer>
+        <footer><p>{{::n._source.author}}</footer>
     </div>
   </article>
 </div>
