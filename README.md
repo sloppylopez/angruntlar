@@ -1,6 +1,5 @@
 ## Angular + Firebase + Nodejs + ELK + Docker + Docker-Compose + RSS + Travis
 [![Code Climate](https://codeclimate.com/github/sloppylopez/angularclient/badges/gpa.svg)](https://codeclimate.com/github/sloppylopez/angularclient)
-[![Travis](https://travis-ci.org/sloppylopez/angularclient.svg)](https://travis-ci.org/sloppylopez/angularclient)
 [![Test Coverage](https://codeclimate.com/github/sloppylopez/angularclient/badges/coverage.svg)](https://codeclimate.com/github/sloppylopez/angularclient/coverage)
 <a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png"></a><a href="https://github.com/sloppylopez/angularclient/releases/tag/v1.0.6-feel-like-a-sir">  v1.0.6-feel-like-a-sir</a>
 
