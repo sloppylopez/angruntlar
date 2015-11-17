@@ -3,8 +3,6 @@
 [![Test Coverage](https://codeclimate.com/github/sloppylopez/angularclient/badges/coverage.svg)](https://codeclimate.com/github/sloppylopez/angularclient/coverage)
 <a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png"></a><a href="https://github.com/sloppylopez/angularclient/releases/tag/v1.0.6-feel-like-a-sir">  v1.0.6-feel-like-a-sir</a>
 
-<img src="https://github.com/sloppylopez/angularclient/blob/master/app/images/100x100/feellikeasir.jpg" alt="sloppylopez.com"/>
-
 <a href="http://sloppylopez.com/">sloppylopez.com</a>
 
 ##FEATURES SO FAR:
