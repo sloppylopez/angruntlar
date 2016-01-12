@@ -2,6 +2,7 @@
 [![Code Climate](https://codeclimate.com/github/sloppylopez/angularclient/badges/gpa.svg)](https://codeclimate.com/github/sloppylopez/angularclient)
 [![Test Coverage](https://codeclimate.com/github/sloppylopez/angularclient/badges/coverage.svg)](https://codeclimate.com/github/sloppylopez/angularclient/coverage)
 <a href="http://gruntjs.com/"><img src="https://cdn.gruntjs.com/builtwith.png"></a><a href="https://github.com/sloppylopez/angularclient/releases/tag/v1.0.6-feel-like-a-sir">  v1.0.6-feel-like-a-sir</a>
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sloppylopez/angruntlar/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 <a href="http://sloppylopez.com/">sloppylopez.com</a>
 
