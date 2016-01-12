@@ -184,3 +184,7 @@ http://feeds.feedburner.com/thoughtram
 ## TO BE DONE
 start using jsDelivr
 http://www.appelsiini.net/projects/lazyload
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/sloppylopez/angruntlar/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
